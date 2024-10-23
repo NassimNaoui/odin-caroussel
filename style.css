@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+}
+
+.img-container {
+  height: 500px;
+  width: 500px;
+  display: flex;
+}
+
+.img {
+  display: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.visible {
+  display: block;
+}
