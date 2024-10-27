@@ -27,8 +27,66 @@ main {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  position: relative;
+  z-index: auto;
 }
 
 .visible {
   display: block;
+}
+
+.buttons-container {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+
+.arrow-container {
+  display: flex;
+  height: 470px;
+  width: 500px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.buttons-container:hover .arrow {
+  display: block;
+}
+
+.arrow {
+  display: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.buttons-container:hover .arrow-container #arrow-right:hover,
+.buttons-container:hover .arrow-container #arrow-left:hover {
+  background-color: rgba(128, 128, 128, 0.418);
+  border-radius: 100%;
+}
+
+.dot-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.dot {
+  width: 13px;
+  aspect-ratio: 1;
+  background-color: rgba(110, 107, 107, 0.845);
+  border-radius: 100%;
+}
+
+.focus {
+  background-color: white;
 }
